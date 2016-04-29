@@ -30,12 +30,10 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = (
-    # 'mainapp',
-    'appeal',
-    'pages',
     'base',
-    # 'mytest',
-    'ilt_client',
+    'pages',
+    'appeal',
+    'accounts',
     'back_end',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -105,4 +103,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-AUTH_USER_MODEL = 'back_end.AppealUser'
+AUTH_USER_MODEL = 'accounts.AppealUser'
