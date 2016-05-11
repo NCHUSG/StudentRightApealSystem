@@ -40,7 +40,7 @@ class AppealUserManager(BaseUserManager):
     user.is_admin = True
     user.is_superuser = True
     user.save(using=self._db) 
-    print('create_superuser is execute!')
+    #print('create_superuser is execute!')
     return user
 
 class AppealUser(AbstractBaseUser, PermissionsMixin):
@@ -113,7 +113,7 @@ class AppealUser(AbstractBaseUser, PermissionsMixin):
 
   @property
   def department_str(self):
-    print(self.department)
+    #print(self.department)
     for data, str in DepartChoice:
       if data == self.department:
         return str
