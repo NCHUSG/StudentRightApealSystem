@@ -24,7 +24,7 @@ DEBUG = False
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = ['.nchusg.org']
+ALLOWED_HOSTS = ['.nchusg.org','127.0.0.1']
 
 
 # Application definition
