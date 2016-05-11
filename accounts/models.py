@@ -113,7 +113,7 @@ class AppealUser(AbstractBaseUser, PermissionsMixin):
 
   @property
   def department_str(self):
-    print(self.department)
+    #print(self.department)
     for data, str in DepartChoice:
       if data == self.department:
         return str
